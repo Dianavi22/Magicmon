@@ -2,20 +2,33 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Data", menuName = "ScriptableObjects/WizardData", order = 1)]
-public class WizardData : MonoBehaviour
+[CreateAssetMenu(menuName = "Scriptable/Wizard", order = 1)]
+public class WizardData : ScriptableObject
 {
     // For menus and wizard presentation
+    [Header("Data")]
     public string nameWizard;
-    public int descriptionWizard;
+    public string descriptionWizard;
 
     // Moving - add all values statics 
+    [Header("Moving")]
     public float speedWizard;
     public float jumpForceWizard;
+    public float dashForce;
 
     // Visual
-    public Material wiardMaterial; // Temporary 
+    [Header("Visual")]
+    public Material wizardMaterial; // Temporary 
     public Sprite spriteWizard;
     public GameObject prefabWiard;
+
+    // Scripts
+    [Header("Script")]
+     public GameObject wizardSpell;
+
+    // Stats
+    [Header("Stats")]
+    public int maxLife;
+    public int maxUltBar;
 
 }
