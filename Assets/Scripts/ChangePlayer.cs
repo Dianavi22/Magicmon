@@ -7,11 +7,12 @@ public class ChangePlayer : MonoBehaviour
 {
     [SerializeField] private List<WizardData> _wizards;
     [SerializeField] private LifeWizardData _lifeWizards;
-    [SerializeField] private UltBarWizardData _ultWizards;
-    [SerializeField] private ISpell _currentSpell;
-    [SerializeField] private GameObject _currentSpellPrefab;
-    [SerializeField] private CurrentWizardData _currentWizard;
-    [SerializeField] private SpriteRenderer _currentSprite;
+    private UltBarWizardData _ultWizards;
+    private ISpell _currentSpell;
+    private GameObject _currentSpellPrefab;
+    private CurrentWizardData _currentWizard;
+    private SpriteRenderer _currentSprite;
+
     void Start()
     {
         _currentSprite = GetComponentInChildren<SpriteRenderer>();
@@ -58,7 +59,7 @@ public class ChangePlayer : MonoBehaviour
         }
 
         _currentWizard.currentWizardData = _wizards[id];
-        if(_currentSpell != null)
+        if (_currentSpell != null)
         {
             Destroy(_currentSpellPrefab);
         }
