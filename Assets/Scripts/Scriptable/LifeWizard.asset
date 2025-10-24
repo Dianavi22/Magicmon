@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4cf3d37dd2f9b884e812e3b529029774, type: 3}
   m_Name: LifeWizard
   m_EditorClassIdentifier: 
-  lifeWizard: 0a000000030000000600000009000000
+  lifeWizard: 01000000010000000100000001000000

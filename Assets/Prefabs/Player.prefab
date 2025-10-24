@@ -126,6 +126,8 @@ GameObject:
   m_Component:
   - component: {fileID: 7896343168925234272}
   - component: {fileID: 7448803778570053443}
+  - component: {fileID: 5870642638030647970}
+  - component: {fileID: 5006959963493049113}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -169,3 +171,27 @@ MonoBehaviour:
   _lifeWizards: {fileID: 11400000, guid: ef70c8d0f26d3d141a2e3df82ed8f4fa, type: 2}
   _ultWizards: {fileID: 11400000, guid: f9530841e58e2be4490061afabbc62af, type: 2}
   _currentWizard: {fileID: 11400000, guid: bb10ff8fdf86a3343b374a35fb5172a5, type: 2}
+--- !u!114 &5870642638030647970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8655647273648098057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edb77b7cb17764749a23ea4e5a131258, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5006959963493049113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8655647273648098057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: caae21e7eebd34e40975d68ccff716a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
