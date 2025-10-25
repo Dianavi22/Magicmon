@@ -352,9 +352,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 910fbdbb19e53be4fb9f3d8e931e3c2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _isDebug: 1
   _lifeWizardData: {fileID: 11400000, guid: ef70c8d0f26d3d141a2e3df82ed8f4fa, type: 2}
   _healthWish: 1
-  _maxHealth: 0
+  _maxHealth: 1
   _sameHealth: 0
   _customHealth: 01000000000000000100000001000000
   wizardMaxLife:
@@ -362,6 +363,11 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 1e3d3b1a0866b2248b28df71ce55cdf1, type: 2}
   - {fileID: 11400000, guid: 5e5f71210e5e88b469f7b31bdeb60e78, type: 2}
   - {fileID: 11400000, guid: 7f040194c039d8b47a92838c6ad8061c, type: 2}
+  _ultWizardData: {fileID: 11400000, guid: f9530841e58e2be4490061afabbc62af, type: 2}
+  _ultWish: 0
+  _maxUlt: 0
+  _sameUlt: 0
+  _customUlt: 01000000020000000300000004000000
 --- !u!1001 &4243559229812059441
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -370,18 +376,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5494943277537556528, guid: 64455d33f45b3e4448ffb9e209f2c8f1, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 7448803778570053443, guid: 64455d33f45b3e4448ffb9e209f2c8f1, type: 3}
-      propertyPath: _test
-      value: 
-      objectReference: {fileID: 11500000, guid: 3bc68b9b80a87ed488c6c00bfaa10d40, type: 3}
-    - target: {fileID: 7448803778570053443, guid: 64455d33f45b3e4448ffb9e209f2c8f1, type: 3}
-      propertyPath: _currentSpell
-      value: 
-      objectReference: {fileID: 11500000, guid: 3bc68b9b80a87ed488c6c00bfaa10d40, type: 3}
     - target: {fileID: 7896343168925234272, guid: 64455d33f45b3e4448ffb9e209f2c8f1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

@@ -11,6 +11,7 @@ public class PlayerHealth : MonoBehaviour
     private PlayerData _playerData;
     public event Action<int> OnUpdateLife;
 
+
     private void Start()
     {
         _playerData = GetComponent<PlayerData>();
@@ -22,14 +23,13 @@ public class PlayerHealth : MonoBehaviour
         _playerData.OnGetNewLife -= GetNewLife;
     }
 
-    public void GetNewLife()
+    private void GetNewLife()
     {
         _maxHealth = _playerData.CurrentWizard.currentWizardData.maxLife;
         CurrentHealth = _playerData.CurrentWizard.currentLife;
-        print(_maxHealth + " " + CurrentHealth);
     }
 
-    public  bool CheckIsAlive()
+    public bool CheckIsAlive()
     {
         if (CurrentHealth > 0)
         {
@@ -60,14 +60,18 @@ public class PlayerHealth : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.I))
+        if (DevTool.IsDebugMode)
         {
-            TakeDamage(1);
+            if (Input.GetKeyDown(KeyCode.I))
+            {
+                TakeDamage(1);
+            }
+            if (Input.GetKeyDown(KeyCode.J))
+            {
+                TakeHealth(1);
+            }
         }
-        if (Input.GetKeyDown(KeyCode.J))
-        {
-            TakeHealth(1);
-        }
+
     }
 
 }

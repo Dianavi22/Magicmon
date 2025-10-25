@@ -32,30 +32,32 @@ public class ChangePlayer : MonoBehaviour
 
     void Update()
     {
-        //Temporary 
-        if (Input.GetKeyDown(KeyCode.UpArrow))
+        if (DevTool.IsDebugMode)
         {
-            ChangeCurrentWizard(0);
+            if (Input.GetKeyDown(KeyCode.UpArrow))
+            {
+                ChangeCurrentWizard(0);
 
-        }
-        if (Input.GetKeyDown(KeyCode.DownArrow))
-        {
-            ChangeCurrentWizard(1);
+            }
+            if (Input.GetKeyDown(KeyCode.DownArrow))
+            {
+                ChangeCurrentWizard(1);
 
-        }
-        if (Input.GetKeyDown(KeyCode.LeftArrow))
-        {
-            ChangeCurrentWizard(2);
+            }
+            if (Input.GetKeyDown(KeyCode.LeftArrow))
+            {
+                ChangeCurrentWizard(2);
 
-        }
-        if (Input.GetKeyDown(KeyCode.RightArrow))
-        {
-            ChangeCurrentWizard(3);
-        }
+            }
+            if (Input.GetKeyDown(KeyCode.RightArrow))
+            {
+                ChangeCurrentWizard(3);
+            }
 
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            _currentSpell.SpellAttack();
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                _currentSpell.SpellAttack();
+            }
         }
 
     }
@@ -103,7 +105,6 @@ public class ChangePlayer : MonoBehaviour
             _lifeWizards.lifeWizard[_oldID] = _currentWizard.currentLife;
             _ultWizards.ultBarWizard[_oldID] = _currentWizard.currentUlt;
         }
-        print("ID / OLD : " + id + " " + _oldID);
 
         _oldID = id;
         _currentWizard.currentWizardData = _wizards[id];

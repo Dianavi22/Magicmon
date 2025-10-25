@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9156c09ea82ce524db721e99eb89c043, type: 3}
   m_Name: UltBarWizardData
   m_EditorClassIdentifier: 
-  ultBarWizard: 04000000030000000100000006000000
+  ultBarWizard: 00000000000000000000000000000000
