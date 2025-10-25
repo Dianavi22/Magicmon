@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb60972a77c8fd549a01cea0bf906b9f, type: 3}
+  m_Name: EarthWizard
+  m_EditorClassIdentifier: 
+  nameWizard: Earth Wizard
+  descriptionWizard: AAAAAAA
+  speedWizard: 0
+  jumpForceWizard: 0
+  dashForce: 0
+  wizardMaterial: {fileID: 2100000, guid: 3dcfda71650ccad4bbd7ea579384e8e8, type: 2}
+  spriteWizard: {fileID: 0}
+  prefabWiard: {fileID: 0}
+  wizardSpell: {fileID: 681375337116590462, guid: 5d1381a6c1afa574d8ac214e039ae9f1, type: 3}
+  maxLife: 10
+  maxUltBar: 40

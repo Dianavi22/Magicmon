@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb60972a77c8fd549a01cea0bf906b9f, type: 3}
+  m_Name: WaterWizard
+  m_EditorClassIdentifier: 
+  nameWizard: Water Wizard
+  descriptionWizard: AAAAAAA
+  speedWizard: 0
+  jumpForceWizard: 0
+  dashForce: 0
+  wizardMaterial: {fileID: 2100000, guid: cd2e20bac6fca1242849713ef3d0fa3d, type: 2}
+  spriteWizard: {fileID: 0}
+  prefabWiard: {fileID: 0}
+  wizardSpell: {fileID: 1701531959788591513, guid: 604e93608a4139a44882e579503d7310, type: 3}
+  maxLife: 10
+  maxUltBar: 30
