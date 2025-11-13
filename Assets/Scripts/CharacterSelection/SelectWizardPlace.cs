@@ -7,9 +7,13 @@ public class SelectWizardPlace : MonoBehaviour
 {
     [SerializeField] int _myID;
     [SerializeField] private SelectionWizardManager _selectManager;
+    public WizardData WizardData { get; private set; }
     private Button _selectButton;
+
+    private Image _selectImage;
     void Start()
     {
+        _selectImage = GetComponent<Image>();
         _selectButton = GetComponent<Button>();
         _selectManager = FindFirstObjectByType<SelectionWizardManager>();
         _selectButton.onClick.AddListener(ChangePlaceWizard);
@@ -20,7 +24,6 @@ public class SelectWizardPlace : MonoBehaviour
     {
         _selectButton.onClick.RemoveListener(ChangePlaceWizard);
         _selectManager.OnShutDown -= ShutDown;
-
     }
 
     public void ChangePlaceWizard()
@@ -33,6 +36,26 @@ public class SelectWizardPlace : MonoBehaviour
         {
             //
         }
+    }
+
+    public void ResetButton()
+    {
+        WizardData = null;
+        _selectImage.material = null;
+    }
+
+    public void ChangeDesignButton(WizardData wizardData)
+    {
+        try
+        {
+            WizardData = wizardData;
+            _selectImage.material = wizardData.wizardMaterial;
+        }
+        catch
+        {
+            ResetButton();
+        }
+       
     }
 
     void Update()
