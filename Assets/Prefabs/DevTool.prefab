@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &76554539349834836
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9111262242165010507}
+  - component: {fileID: 2959448957415541519}
+  m_Layer: 0
+  m_Name: DevTool
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9111262242165010507
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 76554539349834836}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2959448957415541519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 76554539349834836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 910fbdbb19e53be4fb9f3d8e931e3c2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _isDebug: 1
+  _lifeWizardData: {fileID: 11400000, guid: ef70c8d0f26d3d141a2e3df82ed8f4fa, type: 2}
+  _healthWish: 1
+  _maxHealth: 1
+  _sameHealth: 0
+  _customHealth: 01000000000000000100000001000000
+  wizardMaxLife:
+  - {fileID: 11400000, guid: e87beff4e535ad04496ea770226ddb61, type: 2}
+  - {fileID: 11400000, guid: 1e3d3b1a0866b2248b28df71ce55cdf1, type: 2}
+  - {fileID: 11400000, guid: 5e5f71210e5e88b469f7b31bdeb60e78, type: 2}
+  - {fileID: 11400000, guid: 7f040194c039d8b47a92838c6ad8061c, type: 2}
+  _ultWizardData: {fileID: 11400000, guid: f9530841e58e2be4490061afabbc62af, type: 2}
+  _ultWish: 0
+  _maxUlt: 0
+  _sameUlt: 0
+  _customUlt: 01000000020000000300000004000000

@@ -41,6 +41,8 @@ public class PlayerMovements : MonoBehaviour
     private Gradient originalTrailGradient;
     private float originalTrailStartWidth;
 
+    private bool facingRight;
+
     private void Awake()
     {
         playerRigidbody = GetComponent<Rigidbody2D>();
@@ -51,6 +53,7 @@ public class PlayerMovements : MonoBehaviour
         canDash = true;
         originalTrailGradient = trailRenderer.colorGradient;
         originalTrailStartWidth = trailRenderer.startWidth;
+        facingRight = true;
     }
 
     private void FixedUpdate()
@@ -105,7 +108,10 @@ public class PlayerMovements : MonoBehaviour
 
             if(horizontalDirection != 0)
             {
-                playerSprite.flipY = horizontalDirection > 0;
+                if(horizontalDirection < 0 && facingRight || horizontalDirection > 0 && !facingRight)
+                {
+                    Flip();   
+                }
                 dashingDirection = new Vector2(horizontalDirection, 0);
             }
             
@@ -141,10 +147,15 @@ public class PlayerMovements : MonoBehaviour
             canDash = false;
             isDashing = true;
             trailRenderer.colorGradient = new Gradient();
-            trailRenderer.startWidth = 1f;
+            trailRenderer.startWidth = .5f;
 
             StartCoroutine(StopDashing());
         }
+    }
+
+    public float PlayerDirection()
+    {
+        return horizontalDirection;
     }
 
     private bool IsGrounded()
@@ -164,5 +175,11 @@ public class PlayerMovements : MonoBehaviour
 
         yield return new WaitForSeconds(dashingCooldown);
         canDash = true;
+    }
+
+    private void Flip()
+    {
+        facingRight = !facingRight;
+        transform.Rotate(0, 180, 0);
     }
 }

@@ -38,7 +38,7 @@ public class PlayerHealth : MonoBehaviour
         return false;
     }
 
-    private void TakeDamage(int damages)
+    public void TakeDamage(int damages)
     {
         CurrentHealth -= damages;
         if (!CheckIsAlive())
@@ -48,7 +48,7 @@ public class PlayerHealth : MonoBehaviour
         OnUpdateLife.Invoke(CurrentHealth);
     }
 
-    private void TakeHealth(int health)
+    public void TakeHealth(int health)
     {
         CurrentHealth += health;
         if (CurrentHealth > _maxHealth)

@@ -12,3 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcc3a0853499c0740bb943967b133882, type: 3}
   m_Name: CurrentWizard
   m_EditorClassIdentifier: 
+  currentWizardData: {fileID: 0}
+  currentLife: 0
+  currentUlt: 0
