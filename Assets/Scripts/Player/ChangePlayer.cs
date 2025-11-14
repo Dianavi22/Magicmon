@@ -59,7 +59,6 @@ public class ChangePlayer : MonoBehaviour
                 _currentSpell.SpellAttack();
             }
         }
-
     }
 
     private void ChangeWizardAfterGameOver()
@@ -96,7 +95,7 @@ public class ChangePlayer : MonoBehaviour
 
     }
 
-    private void ChangeCurrentWizard(int id)
+    public void ChangeCurrentWizard(int id)
     {
         if (!CheckCanTakeWizard(id)) return;
 

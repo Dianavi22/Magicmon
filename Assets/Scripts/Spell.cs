@@ -24,5 +24,13 @@ public class Spell : MonoBehaviour
 
             Destroy(gameObject);
         }
+
+        Shield shield = collision.GetComponent<Shield>();
+
+        if (shield != null) {
+
+            Destroy(gameObject);
+
+        }
     }
 }
